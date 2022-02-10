@@ -14,3 +14,21 @@ students = [
 se espera el retorno de:
 [['Theodore', 18], ['Mathew', 22], ['Roxanne', 20], ['David', 18]]
 """
+students = [
+    {'name': 'Theodore', 'age': 18},
+    {'name': 'Mathew', 'age': 22},
+    {'name': 'Roxanne', 'age': 20},
+    {'name': 'David', 'age': 18}
+]
+
+studentName = [x.get('name') for x in students]
+studentAge = [x.get('age') for x in students]
+
+# print(studentName)
+# print(studentAge)
+
+studentsList = dict(zip(studentName, studentAge))
+print(studentsList)
+
+
+
